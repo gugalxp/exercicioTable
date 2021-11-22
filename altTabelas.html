@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Conteudo a Tabela</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script type="text/javascript" src="Pessoas.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-dark top-fixed">
+        <div class="lh-100">
+            <h6 class="mb-0 text-white lh-100">treinamento de listagem de conteudo em uma tabela</h6>
+            <small class="text-white">Conteudo a Tabela</small>
+        </div>
+    </nav>
+
+    <div class="container-form-principal">
+
+        <div id="fPessoas">
+            <form>
+                <div class="form-group">
+                    <label for="txtCodigo">Código</label>
+                    <input type="text" class="form-control" id="txtCodigo" aria-describedby="emailHelp" placeholder="Código" readonly>
+                </div>
+                <div class="form-group">
+                    <label for="txtNome">Nome</label>
+                    <input type="text" class="form-control" id="txtNome" aria-describedby="emailHelp" placeholder="Nome">
+                </div>
+                <div class="form-group">
+                    <label for="txtSobrenome">Sobrenome</label>
+                    <input type="text" class="form-control" id="txtSobrenome" placeholder="Sobrenome">
+                </div>
+                <label for="validationCustomUsername">E-mail</label>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="inputGroupPrepend">@</span>
+                    </div>
+                    <input type="text" class="form-control" id="txtEmail" placeholder="E-mail" aria-describedby="inputGroupPrepend" required>
+                    <div class="invalid-feedback">
+                        Por favor, informe um e-mail válido.
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="slSexo">Sexo</label>
+                    <select id="slSexo" class="form-control">
+                    AZ10
+                    <option value="Masculino" selected>Masculino</option>
+                    <option value="Feminino">Feminino</option>
+                </select>
+                </div>
+                <div class="form-group">
+                    <label for="txtProfissao">Profissão</label>
+                    <input type="text" class="form-control" id="txtProfissao" placeholder="Profissão">
+                </div>
+                <button type="button" class="btn btn-primary btn-lg" onclick="cadPessoa(txtNome.value, txtSobrenome.value, txtEmail.value, slSexo.value, txtProfissao.value)">
+                Inserir
+            </button>
+                <button type="button" class="btn btn-primary btn-lg" onclick="altPessoa(txtNome.value, txtSobrenome.value, txtEmail.value, slSexo.value, txtProfissao.value)">
+                Salvar
+            </button>
+                <button type="button" class="btn btn-primary btn-lg" onclick="delRegistro()">
+                Excluir
+            </button>
+            </form>
+        </div>
+    </div>
+
+
+    <br />
+    <br />
+
+    <section class="section-table">
+        <div id="dGridPessoas">
+
+            <table id="tbPessoas" class="table table-striped bg-white">
+                <thead>
+                    <tr>
+                        <th scope="col">Código</th>
+                        <th scope="col">Nome</th>
+                        <th scope="col">Sobrenome</th>
+                        <th scope="col">E-mail</th>
+                        <th scope="col">Sexo</th>
+                        <th scope="col">Profissão</th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+    </section>
+
+</body>
+
+</html>

@@ -1,0 +1,78 @@
+body {
+    margin: 0px;
+    background-color: rgb(10, 12, 77);
+}
+
+td {
+    border-left: 1px solid rgb(19, 19, 19);
+    border-right: 1px solid rgb(19, 19, 19);
+}
+
+tr:hover {
+    cursor: pointer;
+}
+
+#dGridPessoas {
+    width: 960px;
+    width: 80vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#tbPessoas {
+    font: 14px Verdana;
+}
+
+select {
+    width: 280px;
+    height: 38px;
+}
+
+input[type=button] {
+    width: 180px;
+    height: 48px;
+}
+
+.container-form-principal {
+    background-color: rgb(10, 12, 77);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#fPessoas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25rem;
+    height: 90vh;
+    background: rgb(0, 0, 0);
+    margin-top: -2rem;
+}
+
+form {
+    color: white;
+}
+
+.section-table {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lh-100 {
+    text-align: center;
+    padding: .3rem;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+}
